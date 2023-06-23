@@ -855,7 +855,6 @@ footer {
 }
 
 .check-label {
-  display: flex;
   position: relative;
   align-items: center;
   padding-left: 24px;
@@ -891,16 +890,17 @@ footer {
     border var(--transition-effect), fill var(--transition-effect);
 }
 
-.check-input:checked .check-span {
+.check-input:checked + .check-label .check-span {
   background-color: var(--color-pressed-state);
   border: none;
   fill: var(--color-light-cloud);
 }
 
-.check-input:checked ~ .check-span {
+.check-icon {
 }
 
-.check-icon {
+.check-link {
+  margin-left: 8px;
 }
 
 /* -- button modal Send -- */
