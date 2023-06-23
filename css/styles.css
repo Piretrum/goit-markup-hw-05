@@ -481,7 +481,7 @@ footer {
   color: var(--color-light-cloud);
 }
 
-/* Соц.іконки в футере */
+/* -footer-box-soc- */
 .footer-box-soc {
   margin-right: 80px;
 }
@@ -517,16 +517,23 @@ footer {
   background-color: var(--color-green);
 }
 
-.footer-box-form {
+/* -footer-box-subscribe- */
+.footer-box-subscribe {
 }
 
 .footer-subtitle {
 }
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .f-form-input {
   display: inline-block;
-  max-width: 264px;
+  width: 264px;
   height: 40px;
-  margin-right: 24px;
+
   padding-left: 16px;
   border-radius: 4px;
   color: var(--color-white);
@@ -680,7 +687,7 @@ footer {
     visibility var(--transition-effect);
 }
 
-.modal {
+.modal-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -740,7 +747,7 @@ footer {
   pointer-events: none;
 }
 
-/* ---modal-form--- */
+/* --modal-form-- */
 
 .modal-form {
 }
