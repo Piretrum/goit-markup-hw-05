@@ -505,6 +505,7 @@
 
         <!-- --modal-form-- -->
         <form class="modal-form">
+          <!-- name -->
           <div class="modal-field">
             <label class="modal-label" for="user-name"> Name</label>
 
@@ -519,7 +520,7 @@
               </svg>
             </div>
           </div>
-
+          <!-- tel -->
           <div class="modal-field">
             <label class="modal-label" for="user-tel"> Phone</label>
 
@@ -534,7 +535,7 @@
               </svg>
             </div>
           </div>
-
+          <!-- email -->
           <div class="modal-field">
             <label class="modal-label" for="user-email"> Email</label>
 
@@ -549,8 +550,8 @@
               </svg>
             </div>
           </div>
-
-          <div class="modal-field">
+          <!-- Comment -->
+          <div class="modal-field textarea-field">
             <label class="modal-label" for="user-comment"> Comment</label>
 
             <textarea
@@ -561,21 +562,23 @@
           </div>
 
           <!-- checkbox -->
-          <label class="modal-label check-label">
-            <input
-              type="checkbox"
-              class="check-input visually-hidden"
-              name="policy"
-              id="policy"
-              value="true" />
-            I accept the terms and conditions of the&nbsp;
-            <a class="check-link">Privacy Policy</a>
-            <span class="check-span">
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-tick"></use>
-              </svg>
-            </span>
-          </label>
+          <div class="checkbox-field">
+            <label class="modal-label check-label">
+              <input
+                type="checkbox"
+                class="check-input visually-hidden"
+                name="policy"
+                id="policy"
+                value="true" />
+              I accept the terms and conditions of the&nbsp;
+              <a class="check-link">Privacy Policy</a>
+              <span class="check-span">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
 
           <!-- button Send -->
           <button type="submit" class="btn-send btn-prima">Send</button>
