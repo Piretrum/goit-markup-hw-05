@@ -747,11 +747,6 @@ footer {
   pointer-events: none;
 }
 
-/* --modal-form-- */
-
-.modal-form {
-}
-
 .modal-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -760,6 +755,14 @@ footer {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+/* --modal-form-- */
+.modal-form {
+}
+
+.modal-field {
+  margin-bottom: 8px;
 }
 
 .modal-label {
@@ -782,8 +785,8 @@ footer {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  transition: border-color var(--transition-effect);
   outline: transparent;
+  transition: border-color var(--transition-effect);
 }
 
 .modal-input:hover,
