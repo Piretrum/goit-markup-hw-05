@@ -472,15 +472,21 @@
         <!-- -footer-box-subscribe- -->
         <div class="footer-box-subscribe">
           <p class="footer-subtitle">Subscribe</p>
-          <form class="footer-form">
-            <label aria-label="footer-email">
+          <form class="footer-sbscr-form">
+            <label class="footer-form-label" aria-label="footer-email">
               <input
                 type="email"
                 name="footer-email"
-                class="f-form-input"
+                id="footer-email"
+                class="footer-form-input"
                 placeholder="E-mail" />
             </label>
-            <button type="submit" class="f-form-btn">Subscribe</button>
+            <button type="submit" class="f-form-btn">
+              Subscribe
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
