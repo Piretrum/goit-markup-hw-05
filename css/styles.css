@@ -887,9 +887,11 @@ footer {
   border-radius: 2px;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color var(--transition-effect),
+    border var(--transition-effect), fill var(--transition-effect);
 }
 
-.check-input:checked ~ .check-span {
+.check-input:checked .check-span {
   background-color: var(--color-pressed-state);
   border: none;
   fill: var(--color-light-cloud);
