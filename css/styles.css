@@ -782,10 +782,11 @@ footer {
 .modal-label {
   display: block;
   margin-bottom: 4px;
-  color: #8e8f99;
+  font-family: inherit;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: var(--color-light-slate);
 }
 
 .input-wrap {
@@ -857,14 +858,7 @@ footer {
   display: flex;
   position: relative;
   align-items: center;
-
   padding-left: 24px;
-
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--color-light-slate);
 }
 
 .check-label .check-link {
