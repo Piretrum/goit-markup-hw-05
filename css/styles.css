@@ -852,12 +852,22 @@ footer {
 /* -- checkbox-- */
 .checkbox-field {
   margin-bottom: 24px;
+  /* outline: 1px dashed red; */
 }
 
 .check-label {
+  display: block;
   position: relative;
   align-items: center;
   padding-left: 24px;
+  margin-bottom: 4px;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+  outline: 1px dashed red;
 }
 
 .check-label .check-link {
