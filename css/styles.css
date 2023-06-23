@@ -73,7 +73,25 @@ img {
 }
 
 button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
+}
+
+.btn-prima {
+  display: block;
+
+  border-radius: 4px;
+  border: none;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  color: var(--color-white);
+  background-color: var(--color-primary-brand);
 }
 
 /* p,
@@ -249,23 +267,9 @@ footer {
 }
 
 .hero-btn {
-  display: block;
   min-width: 169px;
   padding: 16px 32px;
-  margin-right: auto;
-  margin-left: auto;
 
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--color-white);
-
-  cursor: pointer;
-  background-color: var(--color-primary-brand);
-  border-radius: 4px;
-  border: none;
   transition: background-color var(--transition-effect);
 }
 
@@ -479,10 +483,10 @@ footer {
 
 /* Соц.іконки в футере */
 .footer-box-soc {
-  /* width: 208px; */
+  margin-right: 80px;
 }
 
-.footer-soc-text {
+.footer-subtitle {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -495,9 +499,6 @@ footer {
   display: flex;
   gap: 16px;
   align-items: center;
-}
-
-.f-soc-link {
 }
 
 .footer-soc-link {
@@ -516,7 +517,44 @@ footer {
   background-color: var(--color-green);
 }
 
-/** ----------------PORTFOLIO.html---------------*/
+.footer-box-form {
+}
+
+.footer-subtitle {
+}
+.f-form-input {
+  display: inline-block;
+  max-width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  padding-left: 16px;
+  border-radius: 4px;
+  color: var(--color-white);
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+}
+
+.f-form-input::placeholder {
+  font-size: 12px;
+  font-family: inherit;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  color: var(--color-white);
+}
+
+.f-form-btn {
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+
+  color: var(--color-white);
+  background-color: var(--color-primary-brand);
+}
+
+/** ----------PORTFOLIO.html---------------*/
 
 .prtf-section {
   padding-top: 96px;
@@ -526,7 +564,7 @@ footer {
 .prtf-container {
 }
 
-/* ---portfolio-menu-filter--- */
+/* --portfolio-menu-filter-- */
 
 .prtf-filter {
   display: flex;
@@ -536,15 +574,9 @@ footer {
 }
 
 .prtf-btn {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: var(--color-primary-brand);
   background-color: var(--color-light-cloud);
-  cursor: pointer;
+
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 
@@ -563,7 +595,7 @@ footer {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ------portfolio-cards----- */
+/* --portfolio-cards-- */
 
 .prtf-cards {
   display: flex;
@@ -592,7 +624,7 @@ footer {
   overflow: hidden;
 }
 
-/* ---portfolio-overlay--- */
+/* --portfolio-overlay-- */
 
 .prtf-card-link {
   transition: box-shadow var(--transition-effect);
@@ -635,7 +667,7 @@ footer {
   padding-left: 16px;
 }
 
-/* ------------MODAL-------- */
+/* ------------------MODAL--------------- */
 
 .backdrop {
   position: fixed;
@@ -652,11 +684,13 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px;
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-effect);
   width: 408px;
   min-height: 584px;
-  background: #fcfcfc;
+  background-color: var(--color-modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -665,6 +699,8 @@ footer {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+
+/* --modal btn close-- */
 
 .modal-btn {
   display: flex;
@@ -704,21 +740,135 @@ footer {
   pointer-events: none;
 }
 
-/* КАК ДОБАВИТЬ ФОКУС НА ЗАКРИВ. КНОПКУ */
+/* ---modal-form--- */
 
-/* В завданні є: «D6» 
-Спочатку модальне вікно і бекдроп 
-приховані за допомогою класу is-hidden на бекдропі, 
-в селекторі якого 
-використовуються властивості 
-visibility, opacity і pointer-events. 
-А в конспекті цього немає
+.modal-form {
+}
 
+.modal-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 
-Daria Lyman
-  22 д. назад
-Ось такі стилі мають бути для класу
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-} */
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8e8f99;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 38px;
+  padding-right: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: border-color var(--transition-effect);
+  outline: transparent;
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--color-primary-brand);
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+  fill: var(--color-primary-brand);
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  height: 120px;
+  resize: none;
+}
+
+.textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translatey(-50%);
+  transition: fill var(--transition-effect);
+}
+
+/* -- checkbox-- */
+.check-label {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  margin-bottom: 24px;
+  padding-left: 24px;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #8e8f99;
+}
+
+.check-label .check-link {
+  color: var(--color-primary-brand);
+  text-decoration: underline;
+}
+
+.check-input {
+  margin-right: 8px;
+}
+
+.check-span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.check-input:checked ~ .check-span {
+  background-color: var(--color-pressed-state);
+  border: none;
+  fill: var(--color-light-cloud);
+}
+
+.check-input:checked ~ .check-span {
+}
+
+.check-icon {
+}
+
+/* -- button modal Send -- */
+
+.btn-send {
+  width: 169px;
+  height: 56px;
+}
