@@ -852,14 +852,9 @@ footer {
 /* -- checkbox-- */
 .checkbox-field {
   margin-bottom: 24px;
-  /* outline: 1px dashed red; */
 }
 
 .check-label {
-  display: block;
-  position: relative;
-  align-items: center;
-  padding-left: 24px;
   margin-bottom: 4px;
 
   font-family: inherit;
@@ -877,6 +872,7 @@ footer {
 
 .check-input {
   margin-right: 8px;
+
   font-family: inherit;
   font-size: 12px;
   line-height: 1.17;
@@ -888,8 +884,7 @@ footer {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0;
+
   margin-right: 8px;
   width: 16px;
   height: 16px;
